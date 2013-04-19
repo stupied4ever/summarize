@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.date              = %q{2012-04-24}
   s.rubyforge_project = "summarize"
 
-  s.require_paths = ["lib"]
+  s.require_paths = ["lib", "ext"]
   s.extensions    = ["ext/summarize/extconf.rb"]
   s.files         = %x{git ls-files}.split("\n").reject {|file| file =~ /^(features|cucumber)/ }
 
